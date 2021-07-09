@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ashe Davis | Web Developer</title>
+    <link href= "style.css" rel = "stylesheet">
 </head>
 <body>
+    <div class = "header">
+        <div id ="about-button"></div>
+        <nav>
+            <ol>
+                <li class="crumb" id = "about" ><a href="./about.html">About Me</a></li>
+            </ol>
+        </nav>
+        <h2 id = "name">Ashe Davis</h2>
+        <h1 id = "welcome">Hi!</h1>
+        <p id = "blip">I’m a front end web developer based in Phoenix, Arizona. I like to make web applications </p>
+        <div id = "contact">
+            <div>
+                <img id="email-pic" src="email_icon_176616.png" alt="email">
+                <a id="email" href="mailto:sadavis0010@gmail.com?subject = Feedback&body = Message">Email</a>
+            </div>
+            <div>
+                <img id="linkedin-pic" src="linkedin.png" alt="linkedin">
+                <a id="linkedin" href="https://www.linkedin.com/in/ashe-davis-b46269216">Linkedin</a>
+            </div>
+            <div>
+                <img id="github-pic" src="25231.png" alt="github">
+                <a id="github" href="https://github.com/adavis0010">Github</a>
+            </div>
+        </div>
+        <button id = "projects-button">Projects</button>
+    </div>
+    <div class = "skills">
+        <h1 id= "skills-header">Skills</h1>
+        <div id = "js">
+            <img id = "js-img" src="javascript--v2.png" alt="js">
+            <p>JavaScript</p>
+        </div>
+        <div id = "nodejs">
+            <img id = "node-img" src="node-js-black.png" alt="nodejs">
+            <p>Node JS</p>
+        </div>
+        <div id = "git">
+            <img id = "git-img" src="Git-Icon-Black.png" alt="git">
+            <p>Git</p>
+        </div>
+        <div id = "github">
+            <img id = "hub-img" src= "25231.png" alt="github">
+            <p>Github</p>
+        </div>
+    </div>
     
+    <h1 id = "projects">Projects</h1>
+    
+    <img src="battletracker.PNG" alt="battletracker" id = "battletracker-img">
+    <h2 id="battletracker">Battle Tracker</h2>
+    <p id= "battle-blurb">A tool for the overwhelmed Dungeon Master. Keep track of Hit Points, Status Effects, and the number of Rounds, all in one place</p>
+    <form action="http://127.0.0.1:5501/index.html">
+        <input type="submit" value="Check It Out" id="battle-button" />
+    </form>
+    <p id = "bottom-margin">/</p>
+
 </body>
 </html>
