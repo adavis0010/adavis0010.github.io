@@ -1,376 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body{
-    margin-bottom: 25px;
+    background-color: #E5E5E5;
 }
 
-h1, .h1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 59px;
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 
-h2, .h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 44px;
+p, h4, h3, h2, h1, a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
-/* h3, .h3 {
-
-} */
-
-.header {
-    position: absolute;
-    width: 100%;
-    height: 775px;
-    left: 0px;
-    top: 0px;
-
-    background: #625E59;
-}
-
-#name {
-    position: absolute;
-    width: 197px;
-    height: 44px;
-    left: 48px;
-    top: 20px;
-
+.header{
+    background-color: #625E59;
+    width: auto;
+    height: auto;
     color: #EAEAEA;
 }
 
-#about {
-    position: absolute;
-    left: 1250px;
-    top: 45px;
-    color: #DCFF52;
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 2em 2em 2em;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.quick-links > a{
+    margin: 0 1em 0 1em
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
     text-align: center;
-    vertical-align: text-top;
-    font-size: 24px;
-    line-height: 29px;
+    margin: 4em auto;
 }
 
-#about-button {
-    width: 200px;
-    height: 60px;
-    background-color: #DCFF52;
-    border: #2e2c2b 2px solid;
-    position: absolute;
-    left: 1200px;
-    top: 30px;
+.info > h1 {
+    margin-bottom: 2em;
 }
 
-#welcome {
-    position: absolute;
-    width: 242px;
-    height: 59px;
-    /* left: 306px; */
-    margin-left: 47%;
-    top: 181px;
-
-    color: #EAEAEA;
+.info > p {
+    line-height: 4em;
+    width: 80%;
+    margin:auto
 }
 
-
-#blip {
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    line-height: 200%;
-    
-    color: #EAEAEA;
-    
-    position: absolute;
-    width: 544px;
-    height: 195px;
-    margin-left: 32%;
-    top: 338px;
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
 }
 
-
-a#email {
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    left: 527px;
-    top: 585px;
-}
-
-#email-pic {
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    left: 515px;
-    top: 525px;
-}
-
-a#linkedin {
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    left: 717px;
-    top: 585px;   
-}
-
-#linkedin-pic {
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    left: 720px;
-    top: 525px;    
-}
-
-a#github {
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    left: 933px;
-    top: 374px; 
+#email-pic, #linkedin-pic{
+    width: 55px;
+    height: 55px;
 }
 
 #github-pic {
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    left: 930px;
-    top: 525px;
+    width: 50px;
+    height: 50px
 }
 
+.picture{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    /* background-color: red; */
+}
 
-#projects-button {
-    position: absolute;
-    width: 254px;
-    height: 82px;
-    margin-left: 41%;
-    /* margin-right: 50%; */
-    top: 660px;
-    text-align: center;
-    
-    background: #DCFF52;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 59px;
-    
-    color: #625E59;
+.picture > img {
+    border-radius: 3%;
+    height: 325px;
+    margin: auto;
 }
 
 .skills{
-    position: absolute;
-    width: 100%;
-    height: 950px;
-    left: 0px;
-    margin-top: 734px;
-}
-
-#skills-header {
-    position: absolute;
-    width: 121px;
-    height: 59px;
-    left: 680px;
-    margin-top: 7%;
-    
-}
-
-.skills {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#js {
-    position: absolute;
-    width: 134px;
-    height: 134px;
-    left: 275px;
-    margin-top: 14%;
-}
-
-#nodejs {
-    position: absolute;
-    width: 134px;
-    height: 134px;
-    left: 540px;
-    margin-top: 14%;
-}
-
-#git {
-    position: absolute;
-    width: 134px;
-    height: 134px;
-    left: 805px;
-    margin-top: 14%;
-}
-
-#github {
-    position: absolute;
-    width: 134px;
-    height: 134px;
-    left: 1070px;
-    margin-top: 14%;
-}
-
-#js-img {
-    width: 134px;
-    height: 134px;
-}
-
-#node-img{
-    width: 134px;
-    height: 134px;
-}
-
-#git-img {
-    width: 134px;
-    height: 134px;
-}
-
-#hub-img {
-    width: 134px;
-    height: 134px;
-}
-
-#projects {
-    position: relative;
-    width: 195px;
-    height: 59px;
-    left: 625px;
     text-align: center;
-    /* margin-left: auto; */
-    /* margin-left: auto; */
-    top: 1290px;
+    margin: 4em auto;
+    line-height: 200%;
 }
 
-.about-header {
-    position: absolute;
-    width: 100%;
-    left:0px;
-    height: 145px;
-    top: 0px;
-    background: #625E59;
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4em auto;
 }
 
-#home{
-    position: absolute;
-    left: 1270px;
-    top: 45px;
-    color: #DCFF52;
-    text-align: center;
-    vertical-align: text-top;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-#home-button{
-    width: 200px;
+.skill-list > div > img{
     height: 60px;
-    background-color: #DCFF52;
-    border: #2e2c2b 2px solid;
-    position: absolute;
-    left: 1200px;
-    top: 30px;
+    width: 60px;
 }
 
-#battletracker-img {
-    position: absolute;
-    width: auto;
-    height: 294px;
-    left: 475px;
-    top: 1464px;
-    border: 3px solid #2e2c2b;
-}
-
-#battletracker {
-    position: absolute;
-    width: 251px;
-    height: 44px;
-    left: 595px;
-    top: 1825px;
-}
-
-#battle-blurb {
-    position: absolute;
-    width: 674px;
-    height: 110px;
-    left: 377px;
-    top: 1919px;    
+.projects{
     text-align: center;
-    line-height: 200%;
+    margin: 4em auto;
+    line-height: 4em;
 }
 
-#battle-button {
-    position: absolute;
-    width: 254px;
-    height: 82px;
-    left: 580px;
-    top: 2044px;
-    
-    background: #DCFF52;
-    margin-bottom: 25px;
-}
-
-#bottom-margin {
-    position: absolute;
-    width: 1440px;
-    height: 51px;
-    left: 0px;
-    top: 2176px;
-    color: white;
-}
-
-#about-body {
-    background-color: #979087;
-}
-
-#pic {
-    position: absolute;
-    width: 287px;
-    height: auto;
-    left: 576px;
-    top: 313px;
-    border: 3px solid #2e2c2b;
-}
-
-#about-me{
-    position: absolute;
-    width: 237px;
-    height: 59px;
-    left: 650px;
-    top: 800px;
-}
-
-#about-blurb{
-    position: absolute;
-    width: 882px;
-    height: 203px;
-    left: 300px;
-    top: 890px;
-
-    font-size: 24px;
-    line-height: 29px;
+.about-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
     text-align: center;
-    line-height: 200%;
+    width: 60%;
+    line-height: 2em;
 }
 
-#jake {
-    height:300px;
-    width: auto;
-    border: #2e2c2b solid 3px;
-    position: absolute;
-    left: 625px;
-    top: 1500px;
-    margin-bottom: 100px;
+.about-me > h1{
+    margin-bottom: 2em;
 }
 
-#bottom-about{
-    position: absolute;
-    width: 1440px;
-    height: 51px;
-    left: 0px;
-    top: 1800px;
-    color: white;
+.about-me > img{
+    width: 200px;
+    border-radius: 5px;
+    margin: 3em auto 4em auto;
 }

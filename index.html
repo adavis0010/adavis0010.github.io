@@ -5,63 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashe Davis | Web Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
     <link href= "style.css" rel = "stylesheet">
 </head>
 <body>
-    <div class = "header">
-        <div id ="about-button"></div>
-        <nav>
-            <ol>
-                <li class="crumb" id = "about" ><a href="./about.html">About Me</a></li>
-            </ol>
-        </nav>
-        <h2 id = "name">Ashe Davis</h2>
-        <h1 id = "welcome">Hi!</h1>
-        <p id = "blip">I’m a front end web developer based in Phoenix, Arizona. I like to make web applications </p>
-        <div id = "contact">
-            <div>
-                <img id="email-pic" src="email_icon_176616.png" alt="email">
-                <a id="email" href="mailto:sadavis0010@gmail.com?subject = Feedback&body = Message">Email</a>
-            </div>
-            <div>
-                <img id="linkedin-pic" src="linkedin.png" alt="linkedin">
-                <a id="linkedin" href="https://www.linkedin.com/in/ashe-davis-b46269216">Linkedin</a>
-            </div>
-            <div>
-                <img id="github-pic" src="25231.png" alt="github">
-                <a id="github" href="https://github.com/adavis0010">Github</a>
+    <div class="header">
+        <div class="nav-bar">
+            <h2>Ashe Davis</h2>
+            <div class="quick-links">
+                <a href="#skills">Skills</a>
+                <a href= "#projects">Projects</a>
+                <a href= "#about">About Me</a>
             </div>
         </div>
-        <a href= "#projects" id = "projects-button">Projects</a>
+        <div class="welcome">
+            <div class="info">
+                <h1>Welcome!</h1>
+                <p>I’m a full stack front end web developer based in Phoenix, Arizona. I like to make web applications.</p>
+                <div class = "contact">
+                    <div>
+                        <a id="email" href="mailto:sadavis0010@gmail.com?subject = Feedback&body = Message" target='_blank'>
+                            <img id="email-pic" src="img/561127.png" alt="email">
+                        </a>
+                    </div>
+                    <div>
+                        <a id="linkedin" href="https://www.linkedin.com/in/ashe-davis-b46269216" target='_blank'>
+                            <img id="linkedin-pic" src="img/linkedin.png" alt="linkedin">
+                        </a>
+                    </div>
+                    <div>
+                        <a id="github" href="https://github.com/adavis0010" target='_blank'>
+                            <img id="github-pic" src="img/25231.png" alt="github">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture">
+                <img id="me" src="img/20210520_171235 (2).jpg" alt="photo of Ashe">
+            </div>
+        </div>       
+    </div>
+
     </div>
     <div class = "skills">
-        <h1 id= "skills-header">Skills</h1>
-        <div id = "js">
-            <img id = "js-img" src="javascript--v2.png" alt="js">
-            <p>JavaScript</p>
-        </div>
-        <div id = "nodejs">
-            <img id = "node-img" src="node-js-black.png" alt="nodejs">
-            <p>Node JS</p>
-        </div>
-        <div id = "git">
-            <img id = "git-img" src="Git-Icon-Black.png" alt="git">
-            <p>Git</p>
-        </div>
-        <div id = "github">
-            <img id = "hub-img" src= "25231.png" alt="github">
-            <p>Github</p>
+        <h1>Skills</h1>
+        <div class="skill-list">
+            <div class = "js">
+                <img id = "js-img" src="img/javascript--v2.png" alt="js">
+                <p>JavaScript</p>
+            </div>
+            <div class = "react">
+                <img src= "img/react-1543566-1306069.png" alt="react">
+                <p>React</p>
+            </div>
+            <div class = "nodejs">
+                <img src="img/node-js-black.png" alt="nodejs">
+                <p>Node JS</p>
+            </div>
+            <div class = "git">
+                <img src="img/Git-Icon-Black.png" alt="git">
+                <p>Git</p>
+            </div>
+            <div class = "github">
+                <img src= "img/25231.png" alt="github">
+                <p>Github</p>
+            </div>
+            <div class = "sql">
+                <img src= "img/5163614.png" alt="postgreSQL">
+                <p>PostgreSQL</p>
+            </div>
         </div>
     </div>
-    <h1 id = "projects">Projects</h1>
-    
-    <img src="battletracker.PNG" alt="battletracker" id = "battletracker-img">
-    <h2 id="battletracker">Battle Tracker</h2>
-    <p id= "battle-blurb">A tool for the overwhelmed Dungeon Master. Keep track of Hit Points, Status Effects, and the number of Rounds, all in one place</p>
-    <form action="http://127.0.0.1:5501/index.html">
-        <input type="submit" value="Check It Out" id="battle-button" />
-    </form>
-    <p id = "bottom-margin">/</p>
-
+    <div class="projects">
+        <h1>Projects</h1>
+        <h2>Under Construction!</h2>
+    </div>
+    <div class="about-me">
+        <h1>About Me</h1>
+        <p>
+            Hello! My name is Ashe. I'm a full-stack web developer that specializes in front-end and web design. I have an academic background in visual arts before I stepped into the world of web development, which gives me a unique combination of skills that's perfectly suited for web design. Designing the look, feel, and user experience of an application has always been my favorite part of the process.
+        <br><br>
+            When I'm not coding, I like to spend my time writing short stories, sewing or doing crafts, and playing video games. Two of my favorite things in the world are storytelling and my wierdo cat, Jake (pictured below), and I hope to be a prolific author someday.
+        </p>
+        <img id="jake" src="img/jake.jpg" alt="jake">
+    </div>
 </body>
 </html>
