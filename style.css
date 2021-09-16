@@ -59,7 +59,27 @@ p, h4, h3, h2, h1, a{
 }
 
 .quick-links > a{
-    margin: 0 1em 0 1em
+    margin: 0 1em 0 1em;
+    display: inline-block;
+    position: relative;
+}
+
+.quick-links > a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DCFF52;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.quick-links > a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .welcome{
@@ -84,13 +104,38 @@ p, h4, h3, h2, h1, a{
 .info > p {
     line-height: 4em;
     width: 80%;
-    margin:auto
+    margin:auto;
+    margin-bottom: 3em;
 }
 
 .contact{
     display: flex;
     justify-content: space-evenly;
     margin-top: 2em;
+}
+
+.contact > div > a{
+    display: inline-block;
+    position: relative;
+    /* background-color: #DCFF52; */
+}
+
+.contact > div > a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DCFF52;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.contact > div > a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #email-pic, #linkedin-pic{
@@ -162,7 +207,7 @@ p, h4, h3, h2, h1, a{
 }
 
 .about-me > img{
-    width: 200px;
+    width: 250px;
     border-radius: 5px;
     margin: 3em auto 4em auto;
 }
